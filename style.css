@@ -296,6 +296,10 @@ input:checked + .slider::before {
 
 @media screen and (max-width: 750px) {
 
+  nav {
+    padding: 30px;
+  }
+
   .theme-switch-wrapper{
     top: 60px;
   }
