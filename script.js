@@ -6,6 +6,9 @@ const image2 = document.getElementById("image2");
 const image3 = document.getElementById("image3");
 const textBox = document.getElementById("text-box");
 
+toggleDarkLightMode(true)
+toggleDarkLightMode(false)
+
 //image for both mode
 function imageMode(color) {
     image1.src = `img/undraw_proud_coder_${color}.svg`;
@@ -30,7 +33,6 @@ function toggleDarkLightMode(isDark) {
 
 //switch
 function switchTheme(event) {
-  console.log(event);
   if (event.target.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
     localStorage.setItem('theme', 'dark');
@@ -51,4 +53,3 @@ if(currentTheme) {
     toggleSwitch.checked = true;
     toggleDarkLightMode(true);
 }
-console.log(currentTheme);
